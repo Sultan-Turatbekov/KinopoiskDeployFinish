@@ -1,0 +1,97 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3c3c3c;
+  padding: 20px;
+  justify-content: space-between;
+  font-family: sans-serif;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  .navigation {
+    ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+      li {
+        a {
+          text-decoration: none;
+          color: white;
+          // padding: 5px 20px;
+          transition: 0.3s;
+          &:hover {
+            color: rgb(219, 219, 219);
+          }
+        }
+        .active {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+  .formContainer {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    .searchForm {
+      width: 70%;
+      position: relative;
+      input {
+        width: 100%;
+        padding: 7px 10px;
+        border-radius: 10px;
+      }
+      .searchIcon {
+        position: absolute;
+        right: 10px;
+        top: 8px;
+      }
+      .deleteIcon {
+        position: absolute;
+        right: 30px;
+        top: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  header {
+    .navigation {
+      ul {
+        flex-direction: column;
+      }
+    }
+  }
+}
+@media screen and (max-width: 525px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+    .formContainer {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      .searchForm {
+        width: 100%;
+        position: relative;
+        input {
+          width: 100%;
+          padding: 7px 10px;
+          border-radius: 10px;
+        }
+        .searchIcon {
+          position: absolute;
+          right: 10px;
+          top: 8px;
+        }
+        .deleteIcon {
+          position: absolute;
+          right: 30px;
+          top: 8px;
+        }
+      }
+    }
+  }
+}

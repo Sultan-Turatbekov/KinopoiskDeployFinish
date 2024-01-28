@@ -1,0 +1,183 @@
+.filmDetailsContainer {
+  background-color: rgba(0, 0, 0, 0.803);
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 60px;
+  position: relative;
+  top: 100px;
+  font-family: sans-serif;
+  border-radius: 10px;
+  margin-bottom: 200px;
+  .filmDetails {
+    display: flex;
+    gap: 30px;
+    .filmImg {
+      max-width: 300px;
+      img {
+        width: 100%;
+      }
+    }
+    .goBackBtn {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      font-size: 20px;
+      cursor: pointer;
+      color: white;
+      border: 1px solid white;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.4s;
+      &:hover {
+        color: red;
+        border-color: red;
+      }
+    }
+    .filmText {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      color: white;
+      .toSeeBtn {
+        a {
+          color: black;
+          font-size: 20px;
+          text-decoration: none;
+          background-color: #fff;
+          padding: 10px;
+          font-weight: 700;
+          cursor: pointer;
+          border-radius: 6px;
+          transition: 0.3s;
+          &:hover {
+            background-color: #000;
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+  .description {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 1160px) {
+  .filmDetailsContainer {
+    padding: 30px 40px;
+    .filmDetails {
+      .goBackBtn {
+        top: 15px;
+        right: 15px;
+        font-size: 14px;
+        width: 20px;
+        height: 20px;
+      }
+      .filmText {
+        .nameRu {
+          font-size: 20px;
+        }
+        .nameOriginal {
+          font-size: 18px;
+        }
+        .genres {
+          font-size: 14px;
+        }
+        .countries {
+          font-size: 14px;
+        }
+        .year {
+          font-size: 14px;
+        }
+        .filmLength {
+          font-size: 14px;
+        }
+        .rating {
+          font-size: 14px;
+        }
+        .toSeeBtn {
+          a {
+            font-size: 14px;
+            padding: 7px;
+          }
+        }
+      }
+    }
+    .description {
+      margin-top: 20px;
+      font-size: 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .filmDetailsContainer {
+    top: 150px;
+    .filmDetails {
+      flex-direction: column;
+      gap: 20px;
+    }
+    .filmImg {
+      max-width: 500px !important;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 460px) {
+  .filmDetailsContainer {
+    padding: 20px 25px;
+    top: 160px;
+    .filmDetails {
+      gap: 0px;
+      .filmText {
+        .nameRu {
+          font-size: 15px;
+        }
+        .nameOriginal {
+          font-size: 11px;
+        }
+        .genres {
+          font-size: 11px;
+        }
+        .countries {
+          font-size: 11px;
+        }
+        .year {
+          font-size: 11px;
+        }
+        .filmLength {
+          font-size: 11px;
+        }
+        .rating {
+          font-size: 11px;
+        }
+        .toSeeBtn {
+          a {
+            font-size: 11px;
+            padding: 3px;
+          }
+        }
+      }
+    }
+    .description {
+      margin-top: 20px;
+      font-size: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+}

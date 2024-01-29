@@ -1,0 +1,88 @@
+header {
+  display: flex;
+  align-items: center;
+  background-color: #3c3c3c;
+  padding: 20px;
+  justify-content: space-between;
+  font-family: sans-serif;
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+}
+header .navigation ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+header .navigation ul li a {
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+header .navigation ul li a:hover {
+  color: rgb(219, 219, 219);
+}
+header .navigation ul li .active {
+  border-bottom: 1px solid white;
+}
+header .formContainer {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+}
+header .formContainer .searchForm {
+  width: 70%;
+  position: relative;
+}
+header .formContainer .searchForm input {
+  width: 100%;
+  padding: 7px 10px;
+  border-radius: 10px;
+}
+header .formContainer .searchForm .searchIcon {
+  position: absolute;
+  right: 10px;
+  top: 8px;
+}
+header .formContainer .searchForm .deleteIcon {
+  position: absolute;
+  right: 30px;
+  top: 8px;
+}
+
+@media screen and (max-width: 850px) {
+  header .navigation ul {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 525px) {
+  header {
+    flex-direction: column;
+    gap: 20px;
+    align-items: start;
+  }
+  header .formContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  header .formContainer .searchForm {
+    width: 100%;
+    position: relative;
+  }
+  header .formContainer .searchForm input {
+    width: 100%;
+    padding: 7px 10px;
+    border-radius: 10px;
+  }
+  header .formContainer .searchForm .searchIcon {
+    position: absolute;
+    right: 10px;
+    top: 8px;
+  }
+  header .formContainer .searchForm .deleteIcon {
+    position: absolute;
+    right: 30px;
+    top: 8px;
+  }
+}/*# sourceMappingURL=HeaderStyles.css.map */

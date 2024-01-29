@@ -1,0 +1,79 @@
+.filmCard {
+  position: relative;
+  overflow: hidden;
+  height: 100%;
+  cursor: pointer;
+}
+.filmCard img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+.filmCard .onHover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  color: #fff;
+  font-size: 18px;
+  transition: opacity 0.3s ease-in-out;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.filmCard .genres {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.filmCard h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.filmCard h5 {
+  margin: 10px 0px;
+  font-weight: 400;
+}
+.filmCard:hover .onHover {
+  display: block;
+}
+
+@media screen and (max-width: 920px) {
+  .filmCard .onHover {
+    padding: 10px;
+  }
+  .filmCard .genres {
+    font-size: 14px;
+  }
+  .filmCard h1 {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+  .filmCard h5 {
+    margin: 5px 0px;
+    font-weight: 400;
+  }
+}
+@media screen and (max-width: 450px) {
+  .filmCard .onHover {
+    padding: 5px;
+  }
+  .filmCard .genres {
+    font-size: 12px;
+  }
+  .filmCard h1 {
+    font-size: 15px;
+    margin-bottom: 3px;
+  }
+  .filmCard h5 {
+    margin: 3px 0px;
+    font-weight: 400;
+    font-size: 12px;
+  }
+  .filmCard h5 p {
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=FilmCardStyles.css.map */

@@ -1,0 +1,26 @@
+.searchListEmpty {
+  font-size: 50px;
+  color: red;
+  text-align: center;
+  position: relative;
+  top: 200px;
+}
+
+.searchList {
+  position: relative;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+@media screen and (max-width: 850px) {
+  .searchList {
+    top: 120px;
+  }
+}
+@media screen and (max-width: 525px) {
+  .searchList {
+    top: 180px;
+  }
+}/*# sourceMappingURL=SearchListStyles.css.map */

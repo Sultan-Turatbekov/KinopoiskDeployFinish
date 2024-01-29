@@ -1,0 +1,73 @@
+.searchFilmCard {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  box-shadow: 0 0 10px black;
+  padding: 20px;
+  margin: 0 auto;
+  width: 60%;
+  background-color: #fff;
+  transition: 0.5s;
+}
+.searchFilmCard:hover {
+  background-color: #a7a7a7;
+}
+.searchFilmCard .cardImg {
+  width: 200px;
+  height: 500px;
+}
+.searchFilmCard .cardImg img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.searchFilmCard .seacrhFilmText {
+  font-size: 18px;
+  padding: 20px;
+  font-family: sans-serif;
+}
+.searchFilmCard .seacrhFilmText .seacrhGenres {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+.searchFilmCard .seacrhFilmText h1 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+.searchFilmCard .seacrhFilmText h5 {
+  margin: 10px 0px;
+  font-weight: 400;
+}
+.searchFilmCard .seacrhFilmText .searchRating {
+  color: gold;
+}
+
+@media screen and (max-width: 1100px) {
+  .searchFilmCard {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 820px) {
+  .searchFilmCard {
+    width: 90%;
+    grid-template-columns: 140px 1fr;
+  }
+}
+@media screen and (max-width: 550px) {
+  .searchFilmCard {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 920px) {
+  .seacrhFilmCard .genres {
+    font-size: 12px;
+  }
+  .seacrhFilmCard h1 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  .seacrhFilmCard h5 {
+    margin: 5px 0px;
+    font-weight: 400;
+  }
+}/*# sourceMappingURL=SearchCardStyles.css.map */
